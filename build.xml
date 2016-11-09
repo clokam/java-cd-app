@@ -1,55 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="build" name="Java Cloudant Web Starter" xmlns:sonar="antlib:org.sonar.ant">
-    <property environment="env"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.7"/>
-    <property name="source" value="1.7"/>
-    <property name="sonar.home" value="lib/sonar"/>
-<property name="sonar.projectKey" value="org.sonarqube:java-simple-ant"/>
-<property name="sonar.projectName" value="Simple Project for Ant"/>
-<property name="sonar.projectVersion" value="1.0"/>
-<property name="sonar.language" value="java" />
-<property name="sonar.sources" value="src" />
-<property name="sonar.binaries" value="bin" />
-<property name="sonar.sourceEncoding" value="UTF-8" />
-<property name= "sonar.host.url" value ="http://169.44.113.105:9000" />
-<property name="sonar.jdbc.url" value="jdbc:h2:tcp://169.44.113.105:9092/sonar" />
-<property name="sonar.jdbc.username" value="sonar"/>
-<property name="sonar.jdbc.password" value="sonar" />
-<property name="ant-contrib.jar" value="lib/ant"/>
-	<property name="dep-jar/junit-4.4.jar" value="lib"/>
-
-	<condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else=".">
-	        <isset property="env.ARCHIVE_DIR" />
-	</condition>
-
-	<property name="warname" value="JavaHelloWorldApp.war"/>
-
-
-    <path id="classpathDir">
-        <pathelement location="bin"/>
-    	<pathelement location="WebContent/WEB-INF/lib/cloudant-client-2.0.0.jar"/>
-    	<pathelement location="WebContent/WEB-INF/lib/gson-2.2.4.jar"/>
-	<fileset dir="dep-jar">
-        	<include name="*.jar"/>
-    	</fileset>
-    </path>
-    <path id="sonar.classpath">
-<pathelement location="${sonar.home}"/>
-<fileset dir="${sonar.home}">
-<include name ="*.jar"/>
-</fileset>
-</path>
-    <target name="init">
-        <mkdir dir="bin"/>
-    </target>
-    <target name="clean">
-        <delete dir="bin"/>
-    	<delete file="${ARCHIVE_DIR}/${warname}" />
-    </target>
-
-   <target name="sonar">
-<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml" classpathref="sonar.classpath" />
-<sonar:sonar/>
-   </target>
-</project>
+        <project basedir="." default="build" name="Java Cloudant Web Starter" xmlns:sonar="antlib:org.sonar.ant">
+            <property environment="env" />
+            <property name="debuglevel" value="source,lines,vars" />
+            <property name="target" value="1.7" />
+            <property name="source" value="1.7" />
+            <property name="sonar.home" value="lib/sonar" />
+            <property name="sonar.projectKey" value="org.sonarqube:java-simple-ant" />
+            <property name="sonar.projectName" value="Simple Project for Ant" />
+            <property name="sonar.projectVersion" value="1.0" />
+            <property name="sonar.language" value="java" />
+            <property name="sonar.sources" value="src" />
+            <property name="sonar.binaries" value="bin" />
+            <property name="sonar.sourceEncoding" value="UTF-8" />
+            <property name="sonar.host.url" value="http://169.44.113.105:9000" />
+            <property name="sonar.jdbc.url" value="jdbc:h2:tcp://169.44.113.105:9092/sonar" />
+            <property name="sonar.jdbc.username" value="sonar" />
+            <property name="sonar.jdbc.password" value="sonar" />
+            <property name="ant-contrib.jar" value="lib/ant" />
+            <property name="dep-jar/junit-4.4.jar" value="lib" />
+            <condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else=".">
+                <isset property="env.ARCHIVE_DIR" /> </condition>
+            <property name="warname" value="JavaHelloWorldApp.war" />
+            <path id="classpathDir">
+                <pathelement location="bin" />
+                <pathelement location="WebContent/WEB-INF/lib/cloudant-client-2.0.0.jar" />
+                <pathelement location="WebContent/WEB-INF/lib/gson-2.2.4.jar" />
+                <fileset dir="dep-jar">
+                    <include name="*.jar" /> </fileset>
+            </path>
+            <path id="sonar.classpath">
+                <pathelement location="${sonar.home}" />
+                <fileset dir="${sonar.home}">
+                    <include name="*.jar" /> </fileset>
+            </path>
+            <target name="init">
+                <mkdir dir="bin" /> </target>
+            <target name="clean">
+                <delete dir="bin" />
+                <delete file="${ARCHIVE_DIR}/${warname}" /> </target>
+            <target name="sonar">
+                <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml" classpathref="sonar.classpath" />
+                <sonar:sonar/> </target>
+        </project>
