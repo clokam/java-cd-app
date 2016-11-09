@@ -85,7 +85,7 @@ public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 		System.out.println(message);
 	}
 
-	public DemoMiracle(String os, String version, String browser,
+	public HelloWorldTest(String os, String version, String browser,
 			String deviceName, String deviceOrientation) {
 		super();
 		this.os = os;
