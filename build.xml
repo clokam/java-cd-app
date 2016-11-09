@@ -38,7 +38,7 @@
             <target name="clean">
                 <delete dir="bin" />
                 <delete file="${ARCHIVE_DIR}/${warname}" /> </target>
-            <target name="sonar">
+            <target name="sonar" depends="clean,init">
                 <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml" classpathref="sonar.classpath" />
                 <sonar:sonar/> </target>
         </project>
