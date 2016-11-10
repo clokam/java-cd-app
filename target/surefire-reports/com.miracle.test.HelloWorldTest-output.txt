@@ -1,3 +1,3 @@
-SauceOnDemandSessionID=c825ffa454dc4603aadeebf04036de1f job-name=CPTK_1000_spl100_New_flow[0] : (Windows 7 chrome 41)
-SauceOnDemandSessionID=c825ffa454dc4603aadeebf04036de1f job-name=com.miracle.test.HelloWorldTest.CPTK_1000_spl100_New_flow[0]
-Job link: https://saucelabs.com/jobs/c825ffa454dc4603aadeebf04036de1f?auth=5085f6aa22a58a0521c33d36574f167c
+SauceOnDemandSessionID=b984cc41e1bf42d08ec8cde187d99ed7 job-name=CPTK_1000_spl100_New_flow[0] : (Windows 7 chrome 41)
+SauceOnDemandSessionID=b984cc41e1bf42d08ec8cde187d99ed7 job-name=com.miracle.test.HelloWorldTest.CPTK_1000_spl100_New_flow[0]
+Job link: https://saucelabs.com/jobs/b984cc41e1bf42d08ec8cde187d99ed7?auth=10ee543317d4a20d89ac035a520cb7d4
