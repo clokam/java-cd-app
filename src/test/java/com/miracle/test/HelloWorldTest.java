@@ -30,8 +30,8 @@ import com.saucelabs.junit.SauceOnDemandTestWatcher;
 @RunWith(ConcurrentParameterized.class)
 public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 
-	public String username = "Kheerthi";
-	public String accesskey = "6e22bfc2-a817-4f75-8209-b531643f777b";
+	public String username = "clokam";
+	public String accesskey = "53b0c067-4215-4aea-b544-4cf689843797";
 
 	public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(
 			username, accesskey);
@@ -126,11 +126,11 @@ public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 			driver.manage().window().maximize();
 			driver.get("http://java-cd-app-test.mybluemix.net/");
 			String textfromid = driver.findElement(By.id("message")).getText();
-			if(textfromid.endsWith("Hello World Watson!"))
+			if(textfromid.endsWith("Hello World Chanakya!"))
 			{
 				System.out.println("Integration Test is a Success!");
 			}else{
-				throw new Exception("Tests Failed");
+				throw new Exception("fail");
 			}
 		}
 
