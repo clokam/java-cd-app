@@ -126,7 +126,7 @@ public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 			driver.manage().window().maximize();
 			driver.get("http://java-cd-app-test.mybluemix.net/");
 			String textfromid = driver.findElement(By.id("message")).getText();
-			if(textfromid.endsWith("Hello World Chanakya!"))
+			if(textfromid.endsWith("Hello World Watson!"))
 			{
 				System.out.println("Integration Test is a Success!");
 			}else{
