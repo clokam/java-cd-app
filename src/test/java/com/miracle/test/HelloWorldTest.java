@@ -128,7 +128,7 @@ public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 			String textfromid = driver.findElement(By.id("message")).getText();
 			if(textfromid.endsWith("Hello World Watson!"))
 			{
-				System.out.println("Integration Test - Success");
+				System.out.println("Integration Test is a Success!");
 			}else{
 				throw new Exception("Tests Failed");
 			}
