@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.miracle.test.HelloWorldTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.664 sec <<< FAILURE!
-CPTK_1000_spl100_New_flow[0](com.miracle.test.HelloWorldTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.Exception: fail
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.596 sec <<< FAILURE!
+CPTK_1000_spl100_New_flow[0](com.miracle.test.HelloWorldTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Exception: Failure
 	at com.miracle.test.HelloWorldTest.CPTK_1000_spl100_New_flow(HelloWorldTest.java:133)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
