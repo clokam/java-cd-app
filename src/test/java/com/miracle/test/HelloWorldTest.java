@@ -30,8 +30,8 @@ import com.saucelabs.junit.SauceOnDemandTestWatcher;
 @RunWith(ConcurrentParameterized.class)
 public class HelloWorldTest implements SauceOnDemandSessionIdProvider {
 
-	public String username = "lavanya45";
-	public String accesskey = "801e93d6-eba5-451f-b411-b3a7fbec1c5a";
+	public String username = "kheerthiimandi";
+	public String accesskey = "e3c666df-44ca-4725-8b37-9de3f5169a6c";
 
 	public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(
 			username, accesskey);

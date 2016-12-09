@@ -12,8 +12,8 @@
             <property name="sonar.sources" value="src" />
             <property name="sonar.binaries" value="bin" />
             <property name="sonar.sourceEncoding" value="UTF-8" />
-            <property name="sonar.host.url" value="http://169.44.113.105:9000" />
-            <property name="sonar.jdbc.url" value="jdbc:h2:tcp://169.44.113.105:9092/sonar" />
+            <property name="sonar.host.url" value="http://169.44.120.41:9000" />
+            <property name="sonar.jdbc.url" value="jdbc:h2:tcp://169.44.120.41:9092/sonar" />
             <property name="sonar.jdbc.username" value="sonar" />
             <property name="sonar.jdbc.password" value="sonar" />
             <property name="ant-contrib.jar" value="lib/ant" />
