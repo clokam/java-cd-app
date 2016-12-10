@@ -12,6 +12,7 @@ import wasdev.sample.functions.*;
 /**
  * Servlet implementation class SimpleServlet..
   Servlet implementation class SimpleServlet.....
+  New comment has been added
  */
 @WebServlet("/SimpleServlet")
 public class SimpleServlet extends HttpServlet {
