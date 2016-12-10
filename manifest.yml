@@ -1,6 +1,6 @@
 applications:
-- path: target/JavaHelloWorldApp.war
-  memory: 512M
+- path: target/JavaHelloWorldApp1.war
+  memory: 512000M
   instances: 1
   domain: mybluemix.net
   name: java-cd-app
