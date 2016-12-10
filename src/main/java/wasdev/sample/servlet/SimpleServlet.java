@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import wasdev.sample.functions.*;
 
 /**
- * Servlet implementation class SimpleServlet
-  Servlet implementation class SimpleServlet
+ * Servlet implementation class SimpleServlet..
+  Servlet implementation class SimpleServlet.....
  */
 @WebServlet("/SimpleServlet")
 public class SimpleServlet extends HttpServlet {
