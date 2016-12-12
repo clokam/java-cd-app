@@ -12,7 +12,7 @@ import wasdev.sample.functions.*;
 /**
  * Servlet implementation class SimpleServlet..
   Servlet implementation class SimpleServlet.....sjlcdsjcktext
-  New comment has been added.......
+  New comment has been added.......test
  */
 @WebServlet("/SimpleServlet")
 public class SimpleServlet extends HttpServlet {
